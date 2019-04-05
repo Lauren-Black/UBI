@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="stylesheet" href="https://use.typekit.net/jmm4gbu.css">
+
+
+    <title>Say No to U.B.I</title>
+    <style>
+        body {
+            background: #FFFFF5;
+            font-family: bebas-neue, sans-serif;
+
+            font-weight: 400;
+
+            font-style: normal;
+        }
+
+        #home {
+            background-image: url(img/falling_bills.png);
+            /*background-color: aqua;*/
+            background-size: 100%;
+            margin-left: -10px;
+            margin-top: -10px;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 1200px;
+            width: 100%;
+            z-index: -1;
+            transition: margin-left .5s;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        .topnav {
+            overflow: hidden;
+            /*background-color: #333;*/
+            z-index: 100;
+            float: right;
+            right: 1%;
+            padding-top: 2px;
+            padding-right: 20px;
+            position: fixed;
+        }
+
+        .topnav a {
+            float: left;
+            color: #000;
+            text-align: center;
+            padding: 24px 26px;
+            text-decoration: none;
+            font-size: 40px;
+        }
+
+        .topnav a:hover {
+            color: #5FA36B;
+            transition: color .3s;
+        }
+
+        #stance {
+            height: 1000px;
+            margin-top: 1200px;
+        }
+
+        #personas {
+            height: 1000px;
+            margin-top: 1000px;
+        }
+
+        img {
+            width: 45%;
+            float: left;
+            padding: 30px;
+        }
+    </style>
 </head>
 
 <body>
-    
+    <div id="container">
+        <div class="topnav" style="transition: .5s">
+            <a href="#home">Home</a>
+            <a href="#stance">Stance</a>
+            <a href="#personas">Personas</a>
+            <a href="#campaign">Campaign</a>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Research</a>
+            <a href="#">Messaging &amp; Approach</a>
+        </div>
+        <div id="home">
+            <span style="font-size:60px;cursor:pointer;padding:30px; position: fixed" onclick="openNav()">&#9776;</span>
+            <div id="stance">
+                <div> UBI is bad. </div>
+            </div>
+            <div id="personas">
+                <img src="img/Benji.png">
+                <img src="img/56410037_386790718719355_2903238480089841664_n.png">
+                <img src="img/56275943_586090341903562_3075532596407435264_n.jpg">
+                <img src="img/Ricky.png">
+            </div>
+        </div>
+
+    </div>
+
 </body>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("home").style.marginLeft = "230px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("home").style.marginLeft = "0";
+    }
+</script>
+
 </html>
