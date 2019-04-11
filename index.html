@@ -8,6 +8,17 @@
 
     <title>Say No to U.B.I</title>
     <style>
+        .grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .grid__item {
+            margin: 20px;
+        }
+
         body {
             background: #FFFFF5;
             font-family: bebas-neue, sans-serif;
@@ -25,7 +36,7 @@
             margin-top: -10px;
             background-repeat: no-repeat;
             position: absolute;
-            height: 1200px;
+            height: 100%;
             width: 100%;
             z-index: -1;
             transition: margin-left .5s;
@@ -107,7 +118,7 @@
 
         #personas {
             height: 1000px;
-            margin-top: 600px;
+            margin-top: 200px;
         }
 
         #personas a {
@@ -148,13 +159,13 @@
         }
 
         .campImg {
-            width: 21%;
+            width: 18%;
         }
 
         p {
             text-align: center;
             font-size: 80px;
-            margin-bottom: 100px;
+            margin-bottom: 20px;
         }
 
         h2 {
@@ -163,16 +174,19 @@
         }
 
         .stance {
-            font-size: 40px;
+            font-size: 30px;
             font-family: din-condensed, sans-serif;
             font-weight: 200;
             font-style: normal;
             padding: 100px;
-            margin-top: -70px;
         }
 
         #stance {
-            margin-top: 1300px;
+            margin-top: 1000px;
+        }
+
+        .personas {
+            width: 750px;
         }
     </style>
 </head>
@@ -194,26 +208,30 @@
             <span style="font-size:60px;cursor:pointer;padding:30px; position: fixed" onclick="openNav()">&#9776;</span>
             <div id="stance">
                 <p>Our Stance</p>
-                <div class="stance"> Universal Basic income is not the answer to Canada’s Economic problems. <br> <br>
+                <div class="grid">
+                    <div class="stance grid__item"> Universal Basic income is not the answer to Canada’s Economic problems. <br> <br>
 
-                    Universal Basic Income is currently a very popular economic and political topic. Trails are being run all over the world to try to gain information on the reality and sustainability of a UBI. All over the news, people are talking about how great a UBI can be, how it will end poverty and give more people a chance, which are both important problems.
-                    <br> <br>
-                    However, two major issues are not being so commonly talked about.
-                    <br> <br>
-                    Firstly, Canada has many economic problems, practically none of which can be solved by a UBI. Healthcare, education and the housing market, just to name a few, are all sectors of our economy that desperately need attention and funding, and if our government does not have the money to fund these vital resources, how can we expect to effectively fund every individual citizen?
-                    <br> <br>
-                    Secondly, there is a lot more that goes into funding UBI than is commonly publicized. Many UBI schemes involve the liquidation of pre-existing welfare systems. UBI would replace the welfare cheques, but what it can’t compensate for are the resources these programs provide, like Ontario Works. According to Ontario Works, “Ontario Works provides people with basic financial assistance while helping them prepare for, find and maintain employment.” These support recourses are never spoken about with UBI, so there is no evidence that any will take their place. In addition to this, a trial held in Hamilton, Ontario, taxes 50 cents on every dollar earned by participants. That’s half your income!
-                    <br> <br>
-                    With this knowledge, we stand against UBI, because it is too expensive, both on money and resources, and it is a bandaid solution to major economic problems.
-                    <br> <br>
-                    Join us, and say no to Universal Basic Income. </div>
+                        Universal Basic Income is currently a very popular economic and political topic. Trails are being run all over the world to try to gain information on the reality and sustainability of a UBI. All over the news, people are talking about how great a UBI can be, how it will end poverty and give more people a chance, which are both important problems.
+                        <br> <br>
+                        However, two major issues are not being so commonly talked about.
+                        <br> <br>
+                        Firstly, Canada has many economic problems, practically none of which can be solved by a UBI. Healthcare, education and the housing market, just to name a few, are all sectors of our economy that desperately need attention and funding, and if our government does not have the money to fund these vital resources, how can we expect to effectively fund every individual citizen?
+                        <br> <br>
+                        Secondly, there is a lot more that goes into funding UBI than is commonly publicized. Many UBI schemes involve the liquidation of pre-existing welfare systems. UBI would replace the welfare cheques, but what it can’t compensate for are the resources these programs provide, like Ontario Works. According to Ontario Works, “Ontario Works provides people with basic financial assistance while helping them prepare for, find and maintain employment.” These support recourses are never spoken about with UBI, so there is no evidence that any will take their place. In addition to this, a trial held in Hamilton, Ontario, taxes 50 cents on every dollar earned by participants. That’s half your income!
+                        <br> <br>
+                        With this knowledge, we stand against UBI, because it is too expensive, both on money and resources, and it is a bandaid solution to major economic problems.
+                        <br> <br>
+                        Join us, and say no to Universal Basic Income. </div>
+                </div>
             </div>
             <div id="personas">
                 <p>Personas</p>
-                <img src="img/Benji%20%E2%80%93%20MainPage.png">
-                <img src="img/Meghan%20%E2%80%93%20MainPage.png">
-                <img src="img/JACQUELINE%20-%20MainPage.png">
-                <img src="img/Ricky%20-%20MainPage.png">
+                <div class="grid">
+                    <img class="grid__item personas" src="img/Benji%20%E2%80%93%20MainPage.png">
+                    <img class="grid__item personas" src="img/Meghan%20%E2%80%93%20MainPage.png">
+                    <img class="grid__item personas" src="img/JACQUELINE%20-%20MainPage.png">
+                    <img class="grid__item personas" src="img/Ricky%20-%20MainPage.png">
+                </div>
                 <br>
                 <br>
                 <a href="personas.html" class="button" id="persButton">More About Personas</a>
@@ -221,14 +239,16 @@
             <div id="campaign">
                 <p>Campaign</p>
                 <h2>Instagram</h2>
-                <img class="campImg" src="img/campaign/1.jpg">
-                <img class="campImg" src="img/campaign/4.jpg">
-                <img class="campImg" src="img/campaign/3.jpg">
-                <img class="campImg" src="img/campaign/6.jpg">
-                <img class="campImg" src="img/campaign/5.jpg">
-                <img class="campImg" src="img/campaign/8.jpg">
-                <img class="campImg" src="img/campaign/7.jpg">
-                <img class="campImg" src="img/campaign/2.jpg">
+                <div class="grid">
+                    <img class="campImg" src="img/campaign/1.jpg">
+                    <img class="campImg" src="img/campaign/4.jpg">
+                    <img class="campImg" src="img/campaign/3.jpg">
+                    <img class="campImg" src="img/campaign/6.jpg">
+                    <img class="campImg" src="img/campaign/5.jpg">
+                    <img class="campImg" src="img/campaign/8.jpg">
+                    <img class="campImg" src="img/campaign/7.jpg">
+                    <img class="campImg" src="img/campaign/2.jpg">
+                </div>
             </div>
         </div>
 

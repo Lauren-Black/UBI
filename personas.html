@@ -7,12 +7,25 @@
     <link rel="stylesheet" href="https://use.typekit.net/jmm4gbu.css">
     <title>Personas</title>
     <style>
+        .grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .grid__item {
+            margin: 20px;
+        }
+
+        .ad__container {
+            widtH: 100vw;
+        }
+
         body {
             background: #FFFFF5;
             font-family: bebas-neue, sans-serif;
-
             font-weight: 400;
-
             font-style: normal;
         }
 
@@ -22,23 +35,27 @@
         }
 
         .ads {
-            width: 20%;
-            margin-bottom: 100px;
+            float: left;
+            width: 300px;
+            padding: 20px;
+            margin-bottom: 250px;
         }
 
+
+
         .persona {
-            margin-left: 350px;
             width: 60%;
+            float: left;
+            margin-top: 100px;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-bottom: 70px;
+            ;
         }
 
         p {
             text-align: center;
-            font-size: 80px;
-            margin-bottom: 50px;
-        }
-
-        #first {
-            margin-left: 170px;
+            font-size: 60px;
         }
 
         .topnav {
@@ -70,6 +87,7 @@
 
 <body>
     <div class="topnav" style="transition: .5s">
+        <a href="index.html">Home</a>
         <a href="#Ricky">Ricky</a>
         <a href="#jac">Jacqueline</a>
         <a href="#Benji">Benjamin</a>
@@ -79,47 +97,48 @@
     <div id="Ricky">
         <p>Ricky</p>
         <img class="persona" src="img/Ricky.jpg">
-        <br>
         <p>Advertisements</p>
-        <br>
-        <img class="ads" id="first" src="img/campaign/2.jpg">
-        <img class="ads" src="img/campaign/4.jpg">
-        <img class="ads" src="img/campaign/6.jpg">
-        <img class="ads" src="img/campaign/8.jpg">
+        <div class="grid ad__container">
+            <img class="ads grid__item" src="img/campaign/4.jpg">
+            <img class="ads grid__item" src="img/campaign/8.jpg">
+            <img class="ads grid__item" src="img/campaign/6.jpg">
+            <img class="ads grid__item" src="img/campaign/2.jpg">
+        </div>
     </div>
     <div id="jac">
         <p>Jacqueline</p>
         <img class="persona" src="img/JACQUELINE.jpg">
-        <br>
         <p>Advertisements</p>
-        <br>
-        <img class="ads" id="first" src="img/campaign/1.jpg">
-        <img class="ads" src="img/campaign/3.jpg">
-        <img class="ads" src="img/campaign/5.jpg">
-        <img class="ads" src="img/campaign/7.jpg">
+        <div class="grid ad__container">
+            <img class="ads" id="first" src="img/campaign/1.jpg">
+            <img class="ads" src="img/campaign/3.jpg">
+            <img class="ads" src="img/campaign/5.jpg">
+            <img class="ads" src="img/campaign/7.jpg">
+        </div>
     </div>
     <div id="Benji">
         <p>Benjamin</p>
         <img class="persona" src="img/Benji.jpg">
-        <br>
         <p>Advertisements</p>
-        <br>
-        <img class="ads" id="first" src="img/campaign/1.jpg">
-        <img class="ads" src="img/campaign/3.jpg">
-        <img class="ads" src="img/campaign/5.jpg">
-        <img class="ads" src="img/campaign/7.jpg">
+        <div class="grid ad__container">
+            <img class="ads" id="first" src="img/campaign/1.jpg">
+            <img class="ads" src="img/campaign/3.jpg">
+            <img class="ads" src="img/campaign/5.jpg">
+            <img class="ads" src="img/campaign/7.jpg">
+        </div>
     </div>
     <div id="Meg">
         <p>Meghan</p>
         <img class="persona" src="img/Meghan.jpg">
-        <br>
         <p>Advertisements</p>
-        <br>
-        <img class="ads" id="first" src="img/campaign/1.jpg">
-        <img class="ads" src="img/campaign/3.jpg">
-        <img class="ads" src="img/campaign/5.jpg">
-        <img class="ads" src="img/campaign/7.jpg">
+        <div class="grid ad__container">
+            <img class="ads" id="first" src="img/campaign/1.jpg">
+            <img class="ads" src="img/campaign/3.jpg">
+            <img class="ads" src="img/campaign/5.jpg">
+            <img class="ads" src="img/campaign/7.jpg">
+        </div>
     </div>
+
 </body>
 
 </html>
