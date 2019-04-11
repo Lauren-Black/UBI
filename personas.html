@@ -23,6 +23,7 @@
 
         .ads {
             width: 20%;
+            margin-bottom: 100px;
         }
 
         .persona {
@@ -33,19 +34,51 @@
         p {
             text-align: center;
             font-size: 80px;
-
+            margin-bottom: 50px;
         }
 
         #first {
             margin-left: 170px;
         }
+
+        .topnav {
+            overflow: hidden;
+            /*background-color: #333;*/
+            z-index: 100;
+            float: right;
+            right: 1%;
+            padding-top: 2px;
+            padding-right: 20px;
+            position: fixed;
+        }
+
+        .topnav a {
+            float: left;
+            color: #000;
+            text-align: center;
+            padding: 24px 26px;
+            text-decoration: none;
+            font-size: 40px;
+        }
+
+        .topnav a:hover {
+            color: #5FA36B;
+            transition: color .3s;
+        }
     </style>
 </head>
 
 <body>
+    <div class="topnav" style="transition: .5s">
+        <a href="#Ricky">Ricky</a>
+        <a href="#jac">Jacqueline</a>
+        <a href="#Benji">Benjamin</a>
+        <a href="#Meg">Meghan</a>
+    </div>
     <div class="title">Personas</div>
     <div id="Ricky">
-        <img class="persona" src="img/Ricky.png">
+        <p>Ricky</p>
+        <img class="persona" src="img/Ricky.jpg">
         <br>
         <p>Advertisements</p>
         <br>
@@ -55,8 +88,37 @@
         <img class="ads" src="img/campaign/8.jpg">
     </div>
     <div id="jac">
-        <img src="img/JACQUELINE%20-%20MainPage.png">
-
+        <p>Jacqueline</p>
+        <img class="persona" src="img/JACQUELINE.jpg">
+        <br>
+        <p>Advertisements</p>
+        <br>
+        <img class="ads" id="first" src="img/campaign/1.jpg">
+        <img class="ads" src="img/campaign/3.jpg">
+        <img class="ads" src="img/campaign/5.jpg">
+        <img class="ads" src="img/campaign/7.jpg">
+    </div>
+    <div id="Benji">
+        <p>Benjamin</p>
+        <img class="persona" src="img/Benji.jpg">
+        <br>
+        <p>Advertisements</p>
+        <br>
+        <img class="ads" id="first" src="img/campaign/1.jpg">
+        <img class="ads" src="img/campaign/3.jpg">
+        <img class="ads" src="img/campaign/5.jpg">
+        <img class="ads" src="img/campaign/7.jpg">
+    </div>
+    <div id="Meg">
+        <p>Meghan</p>
+        <img class="persona" src="img/Meghan.jpg">
+        <br>
+        <p>Advertisements</p>
+        <br>
+        <img class="ads" id="first" src="img/campaign/1.jpg">
+        <img class="ads" src="img/campaign/3.jpg">
+        <img class="ads" src="img/campaign/5.jpg">
+        <img class="ads" src="img/campaign/7.jpg">
     </div>
 </body>
 
