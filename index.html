@@ -111,10 +111,56 @@
             margin-top: 1000px;
         }
 
+        #personas a {
+            background-color: #1F2041;
+            text-decoration: none;
+            color: white;
+            transition: color .3s;
+            transition: margin .3s;
+            margin: 20px 0 0 50px;
+            padding: 30px;
+            box-sizing: border-box;
+            border-radius: 20px;
+
+        }
+
+        #personas a:hover {
+            color: aqua;
+            margin: 19px 0 0 51px;
+        }
+
         img {
             width: 45%;
             float: left;
             padding: 30px;
+        }
+
+        #persButton {
+            float: left;
+            margin-top: 30px;
+            padding: 50px;
+            font-size: 40px;
+        }
+
+        #campaign {
+            height: 1000px;
+            margin-top: 100px;
+            float: left;
+        }
+
+        .campImg {
+            width: 21%;
+        }
+
+        p {
+            text-align: center;
+            font-size: 80px;
+            margin-bottom: 100px;
+        }
+
+        h2 {
+            font-size: 60px;
+            padding-left: 100px;
         }
     </style>
 </head>
@@ -129,7 +175,7 @@
         </div>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Research</a>
+            <a href="research.html">Research</a>
             <a href="#">Messaging &amp; Approach</a>
         </div>
         <div id="home">
@@ -138,10 +184,25 @@
                 <div> UBI is bad. </div>
             </div>
             <div id="personas">
-                <img src="img/Benji.png">
-                <img src="img/56410037_386790718719355_2903238480089841664_n.png">
-                <img src="img/56275943_586090341903562_3075532596407435264_n.jpg">
-                <img src="img/Ricky.png">
+                <img src="img/Benji%20%E2%80%93%20MainPage.png">
+                <img src="img/Meghan%20%E2%80%93%20MainPage.png">
+                <img src="img/JACQUELINE%20-%20MainPage.png">
+                <img src="img/Ricky%20-%20MainPage.png">
+                <br>
+                <br>
+                <a href="personas.html" class="button" id="persButton">More About Personas</a>
+            </div>
+            <div id="campaign">
+                <p>Campaign</p>
+                <h2>Instagram</h2>
+                <img class="campImg" src="img/campaign/1.jpg">
+                <img class="campImg" src="img/campaign/4.jpg">
+                <img class="campImg" src="img/campaign/3.jpg">
+                <img class="campImg" src="img/campaign/6.jpg">
+                <img class="campImg" src="img/campaign/5.jpg">
+                <img class="campImg" src="img/campaign/8.jpg">
+                <img class="campImg" src="img/campaign/7.jpg">
+                <img class="campImg" src="img/campaign/2.jpg">
             </div>
         </div>
 
